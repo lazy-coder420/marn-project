@@ -3,7 +3,7 @@ import Header from '../Components/Header';
 import Navbar from '../Components/Navbar';
 import Banner from '../Components/Banner';
 import FlashSales from '../Components/FlashSales';
-import Categories from '../Components/Categories';
+// 
 import BestSellingProducts from '../Components/BestSellingProducts';
 
 import Jbl from '../Components/Jbl';
@@ -20,7 +20,7 @@ const HomePag = () => {
       <Navbar />
       <Banner />
      <FlashSales />
-      <Categories />
+      {/* <Categories /> */}
       <BestSellingProducts />
       <Jbl />
       <Explore />

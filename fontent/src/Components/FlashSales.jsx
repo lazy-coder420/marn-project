@@ -3,10 +3,10 @@ import Container from '../Components/Container';
 import SectionHeading from '../Components/SectionHeading';
 import Card from '../Components/Card';
 
-import Cardimg1 from '../assets/cardimg1.png';
-import Cardimg2 from '../assets/cardimg2.png';
-import Cardimg3 from '../assets/cardimg3.png';
-import Cardimg4 from '../assets/cardimg4.png';
+import Cardimg1 from '../assets/Cardimg1.png';
+import Cardimg2 from '../assets/Cardimg2.png';
+import Cardimg3 from '../assets/Cardimg3.png';
+import Cardimg4 from '../assets/Cardimg4.png';
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
