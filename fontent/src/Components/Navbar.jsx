@@ -6,6 +6,7 @@ import { HiMagnifyingGlass } from "react-icons/hi2";
 
 import { CiHeart } from "react-icons/ci";
 import { IoCartOutline } from "react-icons/io5";
+import { NavLink } from "react-router";
 
 
 
@@ -20,7 +21,9 @@ const Navbir = () => {
         </div>
 
         <ul className='flex gap-12 '>
-            <li>Home</li>
+             <NavLink to="/" end>
+                Home
+            </NavLink>
             <li>Contact</li>
             <li>About</li>
             <li>Sign Up</li>

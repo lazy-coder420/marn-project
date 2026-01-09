@@ -2,6 +2,7 @@ import React from 'react';
 import { FaChevronDown } from "react-icons/fa";
 import Container from '../Components/Container';
 import Flex from '../Components/Flex';
+import { NavLink } from "react-router";
 
 const Header = () => {
   return (
@@ -13,9 +14,11 @@ const Header = () => {
           <div className="w-[70%] flex justify-end">
             <p>
               Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!{" "}
-              <a href="/shop" className="underline">
-                Shop Now
-              </a>
+
+                 <NavLink to="/shop" className="underline">
+                  Shop
+                  </NavLink>
+           
             </p>
           </div>
 
