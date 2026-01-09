@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from '../Components/Header';
-import Navbar from '../Components/Navbar';
+// import Header from '../Components/Header';
+// import Navbar from '../Components/Navbar';
 import Banner from '../Components/Banner';
 import FlashSales from '../Components/FlashSales';
 // 
@@ -10,14 +10,13 @@ import Jbl from '../Components/Jbl';
 import Explore from '../Components/Explore';
 import NewArrival from '../Components/NewArrival';
 import FastDelivery from '../Components/FastDelivery';
-import Footer from '../Components/Footer';
+// import Footer from '../Components/Footer';
 
 
 const HomePag = () => {
   return (
     <>
-      <Header />
-      <Navbar />
+
       <Banner />
      <FlashSales />
       {/* <Categories /> */}
@@ -27,7 +26,7 @@ const HomePag = () => {
       <NewArrival />
       <FastDelivery />
       
-      <Footer />
+      
      
     </>
   );
