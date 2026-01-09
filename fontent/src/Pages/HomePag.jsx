@@ -10,7 +10,7 @@ import Jbl from '../Components/Jbl';
 import Explore from '../Components/Explore';
 import NewArrival from '../Components/NewArrival';
 import FastDelivery from '../Components/FastDelivery';
-import Footer from '../components/Footer';
+import Footer from '../Components/Footer';
 
 
 const HomePag = () => {
