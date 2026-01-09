@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+
+
+@import "tailwindcss";
+
+
+
+
+
+
+
+
+
+
+
+@theme {
+  --breakpoint-*: initial;
+  --breakpoint-sm: 576px ;
+  --breakpoint-md: 768px ;
+  --breakpoint-lg: 992px ;
+  --breakpoint-xl: 1170px ;
+  --font-opensans : "Open Sans", sans-serif;
+
+  --font-min : "";
+  --color-primary: #DB4444;
+ 
+
+}
+
+
+.Banner-ui li{
+  width: 217px;
+}
+
+ @layer utilities{
+      .container{
+        margin: auto;
+      }
+     
+  }
+
+.slick-dots {
+    bottom: 11px !important;
+    width: 80% !important;
+}
+
+.slick-dots .slick-active div{
+  background-color: var(--color-primary);
+  border: 2px solid white;
+}
