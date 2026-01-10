@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import Container from '../Components/Container'
 import Flex from '../Components/Flex'
 import Card from '../Components/Card'
+import BreadCrump from '../Components/BreadCrump'
+
 
 const ProductPage = () => {
 
@@ -18,7 +20,8 @@ const ProductPage = () => {
   return (
     <>
       <Container>
-        <Flex className="mt-10">
+        <BreadCrump className="mt-25"/>
+        <Flex className="mt-12.5 items-start">
 
           {/* Left Sidebar */}
           <div className="w-[20%]">
@@ -63,27 +66,30 @@ const ProductPage = () => {
           </div>
 
           {/* Right Content */}
-          <div className="w-[80%]">
-           <Flex className="flex flex-wrap">
-            {
-              Products.map((item)=>{
-                return (
-                   <Card
-                  photosrc={item.thumbnail}
-                  title={item.title}
-                  discount={Math.round(item.price - (item.price * item.discountPercentage) /100)}
-                  price={item.price}
-                  review="88"
-                  Percentage={item.discountPercentage}
-                  btn="Add to Cart"
-                />
-                )
-              })
-            }
-           
+<div className="w-[80%]">
+  <Flex className="flex flex-wrap gap-7 ">
+    {
+      Products.map((item) => {
+        return (
+          <Card
+            key={item.id}
+            photosrc={item.thumbnail}
+            title={item.title}
+            discount={Math.round(
+              item.price - (item.price * item.discountPercentage) / 100
+            )}
+            price={item.price}
+            rating={item.rating}
+            reviews={item.reviews.length}
+            Percentage={item.discountPercentage}
+            btn="Add to Cart"
+          />
+        )
+      })
+    }
+  </Flex>
+</div>
 
-           </Flex>
-          </div>
 
         </Flex>
       </Container>

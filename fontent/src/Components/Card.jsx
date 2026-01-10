@@ -3,11 +3,12 @@ import { FaStar } from "react-icons/fa";
 import Flex from '../Components/Flex'
 import { FaRegHeart } from "react-icons/fa";
 import { LiaEye } from "react-icons/lia";
+import { Rate } from 'antd';
 
 
 
 
-const Card = ({ photosrc, title,  discount, price, review, Percentage, btn,}) => {
+const Card = ({ photosrc, title,  discount, price, reviews, Percentage, btn, rating}) => {
   return (
     <>
 
@@ -27,20 +28,13 @@ const Card = ({ photosrc, title,  discount, price, review, Percentage, btn,}) =>
           <h2>{title}</h2>
      
       <Flex className=" gap-3 mt-2 mb-2">
-              <h3>${discount}</h3>
-                <h3>${price}</h3>
+              <h3 className='text-primary'>${discount}</h3>
+                <h3 className='line-through'>${price}</h3>
           </Flex>
 
     <Flex className=" items-center gap-2">
-
-            <Flex  className=" text-yellow-400  gap-1">
-                 <FaStar />
-                  <FaStar />
-                    <FaStar />
-                      <FaStar />
-            </Flex>
-
-          <h5>({review})</h5>
+           <Rate allowHalf defaultValue={rating} />
+          <h5>({reviews})</h5>
      </Flex>
           
     </div>

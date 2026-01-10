@@ -10,6 +10,16 @@ import { NavLink } from "react-router";
 
 
 
+
+const navStyle = ({ isActive }) =>
+  `relative transition-all duration-300
+   ${
+     isActive
+       ? "text-black after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:bg-black"
+       : "text-gray-600 hover:text-gray"
+   }`;
+
+
 const Navbir = () => {
   return (
 <>
@@ -19,15 +29,32 @@ const Navbir = () => {
         <div>
             <img src={Nlogo} alt="" />
         </div>
-
-        <ul className='flex gap-12 '>
-             <NavLink to="/" end>
+          {/* Nav Menu */}
+          <ul className="flex gap-12 *:cursor-pointer">
+            <li>
+              <NavLink to="/" end className={navStyle}>
                 Home
-            </NavLink>
-            <li>Contact</li>
-            <li>About</li>
-            <li>Sign Up</li>
-        </ul>
+              </NavLink>
+            </li>
+
+            <li>
+              <NavLink to="/contact" className={navStyle}>
+                Contact
+              </NavLink>
+            </li>
+
+            <li>
+              <NavLink to="/about" className={navStyle}>
+                About
+              </NavLink>
+            </li>
+
+            <li>
+              <NavLink to="/signup" className={navStyle}>
+                Sign Up
+              </NavLink>
+            </li>
+          </ul>
           
           <div className='flex gap-6 items-center'>
         <div  className='relative '>
