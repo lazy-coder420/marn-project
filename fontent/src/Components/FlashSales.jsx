@@ -3,6 +3,7 @@ import Container from '../Components/Container';
 import SectionHeading from '../Components/SectionHeading';
 import Card from '../Components/Card';
 
+
 import Cardimg1 from '../assets/Cardimg1.png';
 import Cardimg2 from '../assets/Cardimg2.png';
 import Cardimg3 from '../assets/Cardimg3.png';
@@ -100,7 +101,7 @@ const FlashSales = () => {
                   title="HAVIT HV-G92 Gamepad"
                   discount="120"
                   price="160"
-                  
+                   rating={3.5}
                   reviews="88"
                   Percentage="40"
                   btn="Add to Cart"

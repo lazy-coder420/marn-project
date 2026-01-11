@@ -87,7 +87,8 @@ const BestSellingProducts = () => {
             title="The north coat"
             discount="260"
             price="360"
-            review="65"
+            rating={4.5}
+            reviews="65"
             Percentage="40"
             btn="Add to Cart"
           />
@@ -96,7 +97,8 @@ const BestSellingProducts = () => {
             title="Gucci duffle bag"
             discount="960"
             price="1160"
-            review="65"
+            rating={4.5}
+            reviews="65"
             Percentage="40"
             btn="Add to Cart"
           />
@@ -105,7 +107,8 @@ const BestSellingProducts = () => {
             title="RGB liquid CPU Cooler"
             discount="160"
             price="170"
-            review="65"
+            rating={4.5}
+            reviews="65"
             Percentage="40"
             btn="Add to Cart"
           />
@@ -114,7 +117,8 @@ const BestSellingProducts = () => {
             title="Small BookShelf"
             discount="120"
             price="160"
-            review="88"
+            rating={3.5}
+            reviews="88"
             Percentage="40"
             btn="Add to Cart"
           />

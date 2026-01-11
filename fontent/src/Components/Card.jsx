@@ -32,7 +32,7 @@ const Card = ({ photosrc, title,  discount, price, reviews, Percentage, btn, rat
                 <h3 className='line-through'>${price}</h3>
           </Flex>
 
-    <Flex className=" items-center gap-2">
+    <Flex className=" items-center text-amber-700 gap-2">
            <Rate allowHalf defaultValue={rating} />
           <h5>({reviews})</h5>
      </Flex>

@@ -102,7 +102,8 @@ const Explore = () => {
       title="ASUS FHD Gaming Laptop"
       discount="120"
       price="160"
-      review="88"  
+      rating="4.5"
+      reviews="88"  
       Percentage="40"
       btn="Add to Cart"
     />
@@ -113,7 +114,8 @@ const Explore = () => {
       title="ASUS FHD Gaming Laptop"
       discount="120"
       price="160"
-      review="88"  
+      rating="3.5"
+      reviews="88"  
       Percentage="40"
       btn="Add to Cart"
     />
@@ -124,7 +126,8 @@ const Explore = () => {
       title="ASUS FHD Gaming Laptop"
       discount="120"
       price="160"
-      review="88"  
+      rating="3.5"
+      reviews="88"  
       Percentage="40"
       btn="Add to Cart"
     />
@@ -135,7 +138,8 @@ const Explore = () => {
       title="ASUS FHD Gaming Laptop"
       discount="120"
       price="160"
-      review="88"  
+      rating="3.5"
+      reviews="88"  
       Percentage="40"
       btn="Add to Cart"
     />
@@ -146,7 +150,8 @@ const Explore = () => {
       title="ASUS FHD Gaming Laptop"
       discount="120"
       price="160"
-      review="88"  
+      rating="3.5"
+      reviews="88"  
       Percentage="40"
       btn="Add to Cart"
     />
@@ -157,7 +162,8 @@ const Explore = () => {
       title="ASUS FHD Gaming Laptop"
       discount="120"
       price="160"
-      review="88"  
+      rating="3.5"
+      reviews="88"  
       Percentage="40"
       btn="Add to Cart"
     />
@@ -168,7 +174,8 @@ const Explore = () => {
       title="ASUS FHD Gaming Laptop"
       discount="120"
       price="160"
-      review="88"  
+      rating="3.5"
+      reviews="88"  
       Percentage="40"
       btn="Add to Cart"
     />
@@ -179,7 +186,8 @@ const Explore = () => {
       title="ASUS FHD Gaming Laptop"
       discount="120"
       price="160"
-      review="88"  
+      rating="3.5"
+      reviews="88"  
       Percentage="40"
       btn="Add to Cart"
     />
@@ -190,7 +198,8 @@ const Explore = () => {
       title="ASUS FHD Gaming Laptop"
       discount="120"
       price="160"
-      review="88"  
+      rating="3.5"
+      reviews="88"  
       Percentage="40"
       btn="Add to Cart"
     />
@@ -201,7 +210,8 @@ const Explore = () => {
       title="ASUS FHD Gaming Laptop"
       discount="120"
       price="160"
-      review="88"  
+      rating="3.5"
+      reviews="88"  
       Percentage="40"
       btn="Add to Cart"
     />
@@ -212,7 +222,8 @@ const Explore = () => {
       title="ASUS FHD Gaming Laptop"
       discount="120"
       price="160"
-      review="88"  
+      rating="3.5"
+      reviews="88"  
       Percentage="40"
       btn="Add to Cart"
     />
@@ -223,7 +234,8 @@ const Explore = () => {
       title="ASUS FHD Gaming Laptop"
       discount="120"
       price="160"
-      review="88"  
+      rating="3.5"
+      reviews="88"  
       Percentage="40"
       btn="Add to Cart"
     />
