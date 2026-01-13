@@ -101,7 +101,7 @@ const FlashSales = () => {
                   title="HAVIT HV-G92 Gamepad"
                   discount="120"
                   price="160"
-                   rating={3.5}
+                  //  rating={3.5}
                   reviews="88"
                   Percentage="40"
                   btn="Add to Cart"

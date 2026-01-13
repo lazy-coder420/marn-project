@@ -16,11 +16,6 @@ import Google3 from '../assets/Google3.png';
 const Footer = () => {
   return (
     <>
-      {/* Scroll To Top */}
-      <div className="pl-336 pb-8">
-        <FaArrowUp className="text-7xl rounded-full p-4 bg-gray-100 cursor-pointer" />
-      </div>
-
       <footer className="bg-black text-white pt-20">
         <Container>
           <div className="grid grid-cols-1 md:grid-cols-5 gap-10">

@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import Container from '../Components/Container'
 import Flex from '../Components/Flex'
-import Card from '../Components/Card'
+// import Card from '../Components/Card'
 import BreadCrump from '../Components/BreadCrump'
+import Pagination  from '../Components/Pagination'
 
 
 const ProductPage = () => {
@@ -68,25 +69,12 @@ const ProductPage = () => {
           {/* Right Content */}
 <div className="w-[80%]">
   <Flex className="flex flex-wrap gap-7 ">
-    {
-      Products.map((item) => {
-        return (
-          <Card
-            key={item.id}
-            photosrc={item.thumbnail}
-            title={item.title}
-            discount={Math.round(
-              item.price - (item.price * item.discountPercentage) / 100
-            )}
-            price={item.price}
-            rating={item.rating}
-            reviews={item.reviews.length}
-            Percentage={item.discountPercentage}
-            btn="Add to Cart"
-          />
-        )
-      })
-    }
+    {/* {
+      Products.map((item ) => {
+        
+        })
+        } */}
+        <Pagination itemsPerPage={6} Products={Products}/>
   </Flex>
 </div>
 
