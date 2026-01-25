@@ -4,20 +4,44 @@ import Flex from '../Components/Flex'
 // import Card from '../Components/Card'
 import BreadCrump from '../Components/BreadCrump'
 import Pagination  from '../Components/Pagination'
-
+import Skeleton from '../Components/Skeleton'
+import { useDispatch } from 'react-redux'
+import { TOTALProducts } from '../createSlice'
 
 const ProductPage = () => {
 
   const [Products, setProducts] = useState([])
+  const [loading, setLoading] = useState(false)
+  const [category, setcategory] = useState([])
+
+
+  const dispatch = useDispatch()
 
   useEffect(() => {
     fetch('https://dummyjson.com/products')
       .then(res => res.json())
-      .then(data => {setProducts(data.products)
-        console.log(data.products)
+      .then(data => {setProducts(data.products) 
+        setLoading(true)
+        dispatch(TOTALProducts(data.products))
       })
   }, [])
   
+    
+useEffect(()=>{
+const UncommonCategory = [...new Set(Products.map((item)=>item.category))]
+ 
+// eslint-disable-next-line react-hooks/set-state-in-effect
+setcategory(UncommonCategory)
+
+ }, [Products])
+
+ const handleFilter = (item) => {
+  
+  const FilterItem = Products.filter((categoryItem)=> categoryItem.category == item)
+};
+
+ 
+
   return (
     <>
       <Container>
@@ -32,15 +56,14 @@ const ProductPage = () => {
             </h2>
 
             <ul className="space-y-4 text-base text-gray-800">
-              <li className="cursor-pointer hover:text-black">Woman’s Fashion</li>
-              <li className="cursor-pointer hover:text-black">Men’s Fashion</li>
-              <li className="cursor-pointer hover:text-black">Electronics</li>
-              <li className="cursor-pointer hover:text-black">Home & Lifestyle</li>
-              <li className="cursor-pointer hover:text-black">Medicine</li>
-              <li className="cursor-pointer hover:text-black">Sports & Outdoor</li>
-              <li className="cursor-pointer hover:text-black">Baby’s & Toys</li>
-              <li className="cursor-pointer hover:text-black">Groceries & Pets</li>
-              <li className="cursor-pointer hover:text-black">Health & Beauty</li>
+            {
+              category.map((item, idx)=>{
+                return(
+                   <li key={idx} onClick={()=>handleFilter(item)} className="cursor-pointer hover:text-black">{item}</li> 
+                )
+              })
+            }
+
             </ul>
 
             <h2 className="text-xl font-semibold mt-10 mb-4">
@@ -69,12 +92,25 @@ const ProductPage = () => {
           {/* Right Content */}
 <div className="w-[80%]">
   <Flex className="flex flex-wrap gap-7 ">
-    {/* {
-      Products.map((item ) => {
-        
-        })
-        } */}
-        <Pagination itemsPerPage={6} Products={Products}/>
+
+         {
+          loading ? 
+            <Pagination itemsPerPage={6} />
+            : 
+           
+           <>
+           <Skeleton /> 
+           <Skeleton /> 
+           <Skeleton /> 
+           <Skeleton /> 
+           <Skeleton /> 
+           <Skeleton /> 
+           </>
+
+           
+         }
+
+
   </Flex>
 </div>
 
@@ -85,4 +121,4 @@ const ProductPage = () => {
   )
 }
 
-export default ProductPage
+export default ProductPage;
