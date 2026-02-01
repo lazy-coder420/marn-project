@@ -13,6 +13,7 @@ const ProductPage = () => {
   const [Products, setProducts] = useState([])
   const [loading, setLoading] = useState(false)
   const [category, setcategory] = useState([])
+  const [showValue, setShowValue] = useState(6)
 
 
   const dispatch = useDispatch()
@@ -57,6 +58,7 @@ setcategory(UncommonCategory)
             </h2>
 
             <ul className="space-y-4 text-base text-gray-800">
+              <li onClick={()=>{dispatch(TOTALProducts(Products))}} className="cursor-pointer hover:text-black">ALL Product</li>
             {
               category.map((item, idx)=>{
                 return(
@@ -92,11 +94,23 @@ setcategory(UncommonCategory)
 
           {/* Right Content */}
 <div className="w-[80%]">
+  <div className="flex justify-end items-center gap-2">
+      <label htmlFor="item">Show:</label>
+
+      <select onChange={(e)=>{setShowValue(e.target.value)}}
+        id="item"
+        className="border border-[#D9D9D9] w-25 text-center cursor-pointer" >
+        <option value='6'>6</option>
+        <option value='9'>9</option>
+        <option value='12'>12</option>
+
+      </select>
+    </div>
   <Flex className="flex flex-wrap gap-7 ">
 
          {
           loading ? 
-            <Pagination itemsPerPage={6} />
+            <Pagination itemsPerPage={showValue} />
             : 
            
            <>
