@@ -11,11 +11,14 @@ export const counterSlice = createSlice({
     TOTALProducts: (state, action) => {
       state.value = action.payload
     },
+    FileReader: (state, action) => {
+      state.value = action.payload
+    },
   },
 })
 
 // actions export
-export const { TOTALProducts } = counterSlice.actions
+export const { TOTALProducts, FileReader } = counterSlice.actions
 
 // reducer export
 export default counterSlice.reducer

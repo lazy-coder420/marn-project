@@ -6,7 +6,7 @@ import BreadCrump from '../Components/BreadCrump'
 import Pagination  from '../Components/Pagination'
 import Skeleton from '../Components/Skeleton'
 import { useDispatch } from 'react-redux'
-import { TOTALProducts } from '../createSlice'
+import { FileReader, TOTALProducts } from '../createSlice'
 
 const ProductPage = () => {
 
@@ -38,6 +38,7 @@ setcategory(UncommonCategory)
  const handleFilter = (item) => {
   
   const FilterItem = Products.filter((categoryItem)=> categoryItem.category == item)
+  dispatch(FileReader(FilterItem))
 };
 
  

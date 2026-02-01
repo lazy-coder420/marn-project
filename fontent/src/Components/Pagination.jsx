@@ -8,7 +8,7 @@ const Pagination = ({ itemsPerPage,}) => {
 
   const TOTALProducts = useSelector((state) => state.TOTALProducts.value);
  const items = TOTALProducts;
- console.log(TOTALProducts)
+
 
 
 
